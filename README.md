@@ -166,7 +166,9 @@ This project demonstrates proficiency in:
 
 # Dashboard Preview
 ![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/2fbdb8620a3ecc44776e52ef9f7df3d84fc9c702/Executive%20Summary.jpeg)
-![image alt
+![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Availability%20Intelligence.jpeg)
+![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Production%20%26%20Factory%20Consumption%20Intelligence.jpeg)
+![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Supply%20Chain%20Intelligence.jpeg)
 
 
 ---
