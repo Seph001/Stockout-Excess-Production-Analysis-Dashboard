@@ -165,7 +165,9 @@ This project demonstrates proficiency in:
 ---
 
 # Dashboard Preview
-(Add dashboard screenshots here)
+![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/2fbdb8620a3ecc44776e52ef9f7df3d84fc9c702/Executive%20Summary.jpeg)
+![image alt
+
 
 ---
 
