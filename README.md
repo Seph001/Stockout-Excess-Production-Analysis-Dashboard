@@ -170,13 +170,3 @@ This project demonstrates proficiency in:
 ![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Production%20%26%20Factory%20Consumption%20Intelligence.jpeg)
 ![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Supply%20Chain%20Intelligence.jpeg)
 
-
----
-
-# Project Structure
-```bash
-├── Data/
-├── Dashboard/
-├── Images/
-├── README.md
-└── Stockout_Analysis.pbix
