@@ -1,169 +1,88 @@
-# Stockout & Excess Production Analysis Dashboard
+# Stockout & Excess Production Analysis
 
-## Overview
-This project is an end-to-end inventory and supply chain analytics solution built in Power BI to monitor stock availability, identify stockout risks, detect excess production, and optimize supply chain performance.
+A Power BI dashboard that shows where a company is **running short on products** and where it is **producing too much**.
 
-The dashboard transforms raw operational data into actionable business intelligence that supports inventory planning, production balancing, procurement decisions, and supply chain efficiency.
-
-The analysis covers inventory intelligence, production monitoring, supplier performance, and demand vs production trends.
+**Period covered:** May 21, 2020 – Dec 31, 2022
 
 ---
 
-# Business Problem
-Manufacturing and distribution businesses often struggle with:
+## What This Project Does
 
-- Frequent stockouts causing lost sales
-- Excess production leading to inventory waste
-- Poor visibility into inventory health
-- Supply chain inefficiencies
-- Delayed reorder decisions
-- Imbalance between demand and production
+It brings production, demand, inventory and supplier data into one dashboard so a manager can quickly see:
 
-This project was designed to provide a centralized monitoring system that enables decision-makers to identify operational bottlenecks and improve inventory performance.
+- Which products customers want but the company cannot supply
+- Which products the factories are making far more of than needed
+- How suppliers and plants are performing
 
----
+## Dashboard Pages
 
-# Objectives
-The dashboard was developed to:
+| Page | What It Shows |
+|---|---|
+| Inventory Intelligence | Main KPIs, unmet demand and overproduction by product |
+| Availability Monitor | Product table with stock levels, reorder levels and alerts |
+| Factory Consumption | Demand vs production by month, and output by plant |
+| Supply Chain Monitor | Supplier volumes, supply cost and supply gap |
 
-- Monitor inventory availability in real time
-- Detect products facing stockout risks
-- Identify overproduced products
-- Analyze production vs demand variance
-- Evaluate supplier contribution and supply gaps
-- Improve inventory planning and replenishment decisions
-- Support data-driven supply chain optimization
+## Key Numbers
 
----
+| Metric | Value |
+|---|---|
+| Total Demand | 265,322 units |
+| Total Production | 7,991,803 units |
+| Total Supply | 228,488 units |
+| Supply Gap | 98,503 units |
+| Total Supply Cost | 3,435,082 |
+| Overproduced Products | 5 |
+| Suppliers | 10 |
+| Stock Cover | 252 days |
 
-# Tools & Technologies
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Excel/CSV Data Sources
+## What I Found
 
----
+**1. The company is producing far more than it sells.**
+Production is about 30 times demand. Five products are the main cause:
 
-# Dashboard Features
+| Product | Extra Units Produced |
+|---|---|
+| Energy Drink 50cl | 1.73M |
+| Maize Flour 5kg | 1.68M |
+| Yoghurt 500ml | 1.58M |
+| Maize Flour 1kg | 1.52M |
+| Bottled Water 50cl | 1.36M |
 
-## Executive Overview
-Provides a high-level summary of inventory performance including:
+**2. Some products have demand but no supply.**
+Six products have customer demand with nothing produced or supplied to cover it, totalling 98,503 units:
 
-- Total Inventory
-- Available Stock
-- Stockout Items
-- Overproduced Items
-- Inventory Cover Days
-- Reorder Status
+| Product | Unmet Demand |
+|---|---|
+| Bottled Water 75cl | 32,893 |
+| Orange Juice 1L | 31,022 |
+| Vegetable Oil 5L | 25,676 |
+| Vegetable Oil 1L | 6,554 |
+| Rice 5kg | 1,720 |
+| Tomato Paste 70g | 638 |
 
----
+**3. Production does not follow demand.**
+Production peaks in July and April, but demand peaks in January and September.
 
-## Inventory Intelligence
-Tracks product-level inventory performance and highlights:
+**4. The problem is company-wide.**
+All 10 plants produce a similar amount (about 674K to 913K units each), so no single plant is the cause.
 
-- Available stock by product
-- Reorder levels
-- Stockout alerts
-- Excess production alerts
-- Production vs demand variance
+## Recommendations
 
-Key findings include:
-- Bottled Water 75cl recorded significant stockout levels
-- Energy Drink 50cl showed excess production
-- Orange Juice 1L experienced negative inventory balance
+1. Cut production of the five overproduced products to match demand.
+2. Fix the supply gap first for Bottled Water 75cl, Orange Juice 1L and Vegetable Oil 5L.
+3. Plan production around the months when demand is highest.
+4. Update the stockout alert so it also flags negative available stock.
 
----
+## Data Model
 
-## Production & Factory Consumption Intelligence
-Analyzes factory operations and production efficiency through:
+Five source tables: **Demand**, **Inventory**, **Product Master**, **Production** and **Supply Chain**, plus calendar tables and a measure table for DAX.
 
-- Production unit performance by plant location
-- Monthly demand vs production trends
-- Product variance analysis
-- Factory output comparisons
+## Tools Used
 
-The dashboard helps identify:
-- High-performing plants
-- Seasonal demand fluctuations
-- Production inefficiencies
-- Demand-supply imbalance
+Power BI Desktop, DAX, Power Query
 
----
+## Author
 
-## Supply Chain Intelligence
-Provides visibility into supplier and supply gap performance including:
-
-- Monthly supply cost trends
-- Supply gap analysis
-- Supplier contribution tracking
-- Quantity supplied by vendors
-
-This enables:
-- Supplier performance evaluation
-- Supply chain risk monitoring
-- Procurement optimization
-- Cost management
-
----
-
-# Key Insights
-
-## Inventory Performance
-- 41 products experienced stockout conditions
-- 5 products were identified as overproduced
-- Inventory cover reached 720 days
-- Total available stock exceeded 7.9 million units
-
-## Production Analysis
-- Significant production surplus observed in:
-  - Energy Drink 50cl
-  - Maize Flour 5kg
-  - Maize Flour 1kg
-
-- Major stockout risks observed in:
-  - Bottled Water 75cl
-  - Orange Juice 1L
-  - Rice 5kg
-
-## Supply Chain Insights
-- Supply gaps exceeded 36,000 units
-- Supplier performance varied significantly across vendors
-- Monthly supply cost fluctuations indicated procurement inefficiencies
-
----
-
-# Business Impact
-This dashboard can help organizations:
-
-- Reduce stockout occurrences
-- Minimize inventory holding costs
-- Improve demand forecasting
-- Optimize production planning
-- Enhance supplier management
-- Improve operational efficiency
-- Support strategic supply chain decisions
-
----
-
-# Skills Demonstrated
-This project demonstrates proficiency in:
-
-- Business Intelligence
-- Inventory Analytics
-- Supply Chain Analytics
-- Data Visualization
-- Dashboard Design
-- DAX Calculations
-- Data Modeling
-- KPI Development
-- Operational Analysis
-
----
-
-# Dashboard Preview
-![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/2fbdb8620a3ecc44776e52ef9f7df3d84fc9c702/Executive%20Summary.jpeg)
-![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Availability%20Intelligence.jpeg)
-![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Production%20%26%20Factory%20Consumption%20Intelligence.jpeg)
-![image alt](https://github.com/Seph001/Stockout-Excess-Production-Analysis-Dashboard/blob/832a83e2f57d0ed947d7aa55b7d306e3812e3983/Supply%20Chain%20Intelligence.jpeg)
-
+**Daniel Joseph Unwujoh**
+Data Analyst & Business Intelligence Consultant
